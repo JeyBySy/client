@@ -1,0 +1,43 @@
+@import "../../../variable.scss";
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+.content {
+  margin-top: 5rem;
+  width: 500px;
+  height: 500px;
+  //   background-color: red;
+}
+.logo {
+  color: $primary-color;
+  font-size: 40px;
+}
+form {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.jc_flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+input {
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+input[type="submit"] {
+  background-color: $primary-color;
+  color: white;
+}
+
+.forgotPassword {
+  position: absolute;
+  right: 0;
+}
