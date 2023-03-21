@@ -4,11 +4,14 @@ import style from "./Navbar.module.scss"
 
 const Navbar = () => {
   return (
-    <>
-      <div className={style.nav}>
-        <NavButton />
+    <div className={style.nav}>
+      Logo
+      <div className={style.wrapper}>
+        <NavButton link={"/"} title="Dashboard" />
+        <NavButton link={"/form"} title="Form" />
+        <NavButton link={"/report"} title="Report" />
       </div>
-    </>
+    </div>
   )
 }
 

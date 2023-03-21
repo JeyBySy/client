@@ -1,13 +1,19 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import style from "./Nav-buttons.module.scss"
 
-const NavButton = () => {
+const NavButton = ({ link, title }) => {
   return (
-    <div className={style.wrapper}>
-      <div className={style.btn}>Dashboard</div>
-      <div className={style.btn}>Forms</div>
-      <div className={style.btn}>Reports</div>
-    </div>
+    <>
+      <NavLink
+        to={link}
+        className={({ isActive, isPending }) =>
+          isPending ? "" : isActive ? style.active : style.pending
+        }
+      >
+        {title}
+      </NavLink>
+    </>
   )
 }
 

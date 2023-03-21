@@ -2,11 +2,11 @@ import { Login, Register } from "./pages/Auth";
 import NotFound from "./pages/404";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/Dashboard";
-
 import MainLayout from "./layout/MainLayout/MainLayout";
 
 
 function App() {
+
   return (
     <div>
       <MainLayout>
@@ -17,7 +17,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MainLayout>
-
     </div>
   );
 }

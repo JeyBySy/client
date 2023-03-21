@@ -5,4 +5,10 @@
   height: 250px;
   // position: fixed;
   z-index: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.wrapper {
+  display: inherit;
 }
